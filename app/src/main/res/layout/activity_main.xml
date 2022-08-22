@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/text_bg">
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,22 +13,65 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="120dp">
+
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
                 >
                 <LinearLayout
                     android:layout_height="80dp"
                     android:layout_width="80dp"
+                    android:background="@drawable/gradient_bg"
+                    >
+                </LinearLayout>
+                    <Space
+                        android:layout_height="match_parent"
+                        android:layout_width="50dp">
+                    </Space>
+                <LinearLayout
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    android:background="@drawable/gradient_bg"
+                    >
+                </LinearLayout>
+                    <Space
+                        android:layout_height="match_parent"
+                        android:layout_width="50dp">
+                    </Space>
+                <LinearLayout
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    android:background="@drawable/gradient_bg"
                     >
                 </LinearLayout>
 
             </LinearLayout>
-        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/dayTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="FRASE DEL DÍA"
+                android:textSize="30sp"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:id="@+id/dayText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Esta es la frase del día asi que ponganse las pilas que si no se pudre todo"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="25sp"></TextView>
+        </LinearLayout>
 
 
 
